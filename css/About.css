@@ -1,0 +1,124 @@
+
+/* Home banar section + heading start*/
+
+.bg-title-page {
+  position: relative;
+  display: flex;
+  justify-content: center;   
+  align-items: center;     
+  height: 400px;             
+  padding: 0 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay on top of image */
+.bg-title-page .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 1;
+}
+
+/* Heading */
+.bg-title-page h2 {
+  position: relative;
+  z-index: 2;       
+  color: #fff;       
+  text-align: center;
+  font-size: 49px;     
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .bg-title-page h2 {
+    font-size: 36px;   
+    line-height: 1.3;
+    padding: 0 20px;  
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-title-page h2 {
+    font-size: 22px !important;  
+    line-height: 1.4 !important;
+    padding: 0 1px;
+  }
+}
+
+
+
+/*About Intro Section*/
+
+.bg1-pattern {
+  padding-top: 40px;
+  padding-bottom: 105px;
+}
+
+/* LEFT TEXT COLUMN */
+.wrap-text-delicious {
+  text-align: left !important;
+  max-width: 95%;
+  margin-top: -40px;
+}
+
+.wrap-text-delicious .tit2,
+.wrap-text-delicious .tit3,
+.wrap-text-delicious p {
+  text-align: left !important;
+}
+
+.wrap-text-delicious .tit3 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  margin-top: 0;
+  color: #111;
+}
+
+.wrap-text-delicious p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+/* ================= IMAGE SIDE ================= */
+
+.wrap-pic-delicious {
+  position: relative;
+  margin-top: 80px;
+  right: -30px;      
+}
+
+/* Image styling */
+.wrap-pic-delicious img {
+  width: 115%;           /* ab pakka width badegi */
+  height: 500px !important;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 768px) {
+
+  .wrap-text-delicious {
+    margin-top: 0;
+  }
+
+  .wrap-pic-delicious {
+    right: 0;
+    margin-top: 30px;
+  }
+
+  .wrap-pic-delicious img {
+    width: 100%;
+    height: auto;
+  }
+}
